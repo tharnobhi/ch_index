@@ -12,7 +12,7 @@ X = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
 
 # Calculate the CH index for k-means clustering with k=3
-kmeans = KMeans(n_clusters=3, random_state=42)
+kmeans = KMeans(n_clusters=3, random_state=8)
 kmeans.fit(X)
 
 # Calculate the within-cluster sum of squares (WSS) for each cluster
